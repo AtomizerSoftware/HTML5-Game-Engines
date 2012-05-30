@@ -1,0 +1,117 @@
+/* colors */
+/* colors links */
+/*font info */
+@font-face {
+  font-family: 'BebasRegular';
+  src: url("fonts/bebas___-webfont.eot");
+  src: url("fonts/bebas___-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bebas___-webfont.woff") format("woff"), url("fonts/bebas___-webfont.ttf") format("truetype"), url("fonts/bebas___-webfont.svg#BebasRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FamiliarProBold';
+  src: url("fonts/familiar_pro-bold-webfont.eot");
+  src: url("fonts/familiar_pro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/familiar_pro-bold-webfont.woff") format("woff"), url("fonts/familiar_pro-bold-webfont.ttf") format("truetype"), url("fonts/familiar_pro-bold-webfont.svg#FamiliarProBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'AccidentalPresidencyRegular';
+  src: url("fonts/accid___-webfont.eot");
+  src: url("fonts/accid___-webfont.eot") format("embedded-opentype"), url("fonts/accid___-webfont.woff") format("woff"), url("fonts/accid___-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ScienceProjectRegular';
+  src: url("fonts/sciep___-webfont.eot");
+  src: url("fonts/sciep___-webfont.eot") format("embedded-opentype"), url("fonts/sciep___-webfont.woff") format("woff"), url("fonts/sciep___-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+#logo {
+  float: right;
+  margin: auto auto; }
+
+.deck-container {
+  font-family: "FamiliarProBold", Arial;
+  font-size: 20px;
+  background-image: url("img/atom-translucent.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .deck-container .slide h1 {
+    font-family: "BebasRegular", Arial, sans-serif;
+    color: #000;
+    font-size: 120px; }
+    .deck-container .slide h1 .sub {
+      font-size: 80px;
+      font-weight: normal; }
+    .deck-container .slide h1 .animatronic {
+      font-family: "ScienceProjectRegular", Arial; }
+  .deck-container .slide h2 {
+    font-family: "BebasRegular", Arial, sans-serif;
+    color: #1589ff;
+    border-bottom-color: #323232;
+    font-size: 80px; }
+  .deck-container .slide h3 {
+    font-size: 40px;
+    color: #888; }
+  .deck-container .slide pre {
+    border-color: #ccc; }
+  .deck-container .slide code {
+    color: #888; }
+  .deck-container .slide p {
+    font-size: 20px; }
+  .deck-container .slide ul.no-bullet {
+    list-style-type: none; }
+  .deck-container .slide blockquote {
+    font-size: 2em;
+    font-style: italic;
+    padding: 1em 2em;
+    color: #cccccc;
+    border-left: 5px solid #ccc; }
+    .deck-container .slide blockquote p {
+      margin: 0; }
+    .deck-container .slide blockquote cite {
+      font-size: .5em;
+      font-style: normal;
+      font-weight: bold;
+      color: #888; }
+  .deck-container .slide ::-moz-selection {
+    background: #0066ee;
+    color: #fff; }
+  .deck-container .slide ::selection {
+    background: #0066ee;
+    color: #fff; }
+  .deck-container .slide a, .deck-container .slide a:hover, .deck-container .slide a:focus, .deck-container .slide a:active, .deck-container .slide a:visited {
+    color: #0066ee;
+    text-decoration: none; }
+  .deck-container .slide a:hover, .deck-container .slide a:focus {
+    text-decoration: underline; }
+  .deck-container > .slide .deck-before, .deck-container > .slide .deck-previous {
+    opacity: 0.4; }
+    .deck-container > .slide .deck-before:not(.deck-child-current) .deck-before, .deck-container > .slide .deck-before:not(.deck-child-current) .deck-previous, .deck-container > .slide .deck-previous:not(.deck-child-current) .deck-before, .deck-container > .slide .deck-previous:not(.deck-child-current) .deck-previous {
+      opacity: 1; }
+  .deck-container > .slide .deck-child-current {
+    opacity: 1; }
+  .deck-container .deck-prev-link, .deck-container .deck-next-link {
+    background: #ccc;
+    font-family: serif; }
+    .deck-container .deck-prev-link, .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-prev-link:active, .deck-container .deck-prev-link:visited, .deck-container .deck-next-link, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus, .deck-container .deck-next-link:active, .deck-container .deck-next-link:visited {
+      color: #fff; }
+    .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus {
+      background: #0066ee;
+      text-decoration: none; }
+  .deck-container .deck-status {
+    font-size: 0.6666em; }
+  .deck-container.deck-menu .slide {
+    background: #eee; }
+  .deck-container.deck-menu .deck-current, .no-touch .deck-container.deck-menu .slide:hover {
+    background: #ddf; }
