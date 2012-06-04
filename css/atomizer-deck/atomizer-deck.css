@@ -33,12 +33,22 @@
   float: right;
   margin: auto auto; }
 
+#background {
+  background-image: url("img/atom.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .15; }
+
 .deck-container {
   font-family: "FamiliarProBold", Arial;
   font-size: 20px;
-  background-image: url("img/atom-translucent.png");
-  background-repeat: no-repeat;
-  background-position: center center;
   content: "";
   position: fixed;
   z-index: -1;
@@ -59,10 +69,12 @@
     font-family: "BebasRegular", Arial, sans-serif;
     color: #1589ff;
     border-bottom-color: #323232;
-    font-size: 80px; }
+    font-size: 80px;
+    margin-bottom: 8px;
+    padding-left: 30px; }
   .deck-container .slide h3 {
     font-size: 40px;
-    color: #888; }
+    color: #153e7e; }
   .deck-container .slide pre {
     border-color: #ccc; }
   .deck-container .slide code {

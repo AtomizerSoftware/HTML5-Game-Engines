@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
-	<title>HTML5/CSS3/Javascript Game Engines</title>
-	
-	<meta name="description" content="An evaluation of the current engines">
-	<meta name="author" content="Michael Myers">
-	<meta name="viewport" content="width=1024, user-scalable=no">
-	
-	<!-- Core and extension CSS files -->
-	<link rel="stylesheet" href="../js/libs/deckjs/core/deck.core.css">
-	<link rel="stylesheet" href="../js/libs/deckjs/extensions/goto/deck.goto.css">
-	<link rel="stylesheet" href="../js/libs/deckjs/extensions/menu/deck.menu.css">
-	<link rel="stylesheet" href="../js/libs/deckjs/extensions/navigation/deck.navigation.css">
-	<link rel="stylesheet" href="../js/libs/deckjs/extensions/status/deck.status.css">
-	<link rel="stylesheet" href="../js/libs/deckjs/extensions/hash/deck.hash.css">
-	<link rel="stylesheet" href="../js/libs/deckjs/extensions/scale/deck.scale.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>HTML5/CSS3/Javascript Game Engines</title>
+
+    <meta name="description" content="An evaluation of the current engines">
+    <meta name="author" content="Michael Myers">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+
+    <!-- Core and extension CSS files -->
+    <link rel="stylesheet" href="../js/libs/deckjs/core/deck.core.css">
+    <link rel="stylesheet" href="../js/libs/deckjs/extensions/goto/deck.goto.css">
+    <link rel="stylesheet" href="../js/libs/deckjs/extensions/menu/deck.menu.css">
+    <link rel="stylesheet" href="../js/libs/deckjs/extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" href="../js/libs/deckjs/extensions/status/deck.status.css">
+    <link rel="stylesheet" href="../js/libs/deckjs/extensions/hash/deck.hash.css">
+    <link rel="stylesheet" href="../js/libs/deckjs/extensions/scale/deck.scale.css">
     <link rel="stylesheet" href="../css/atomizer-deck/atomizer-deck.css">
-	
-	<!-- Style theme. More available in /themes/style/ or create your own. -->
-	<!--<link rel="stylesheet" href="../css/atomizer.css"> -->
-	
-	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
-	<link rel="stylesheet" href="../css/transition/horizontal-slide.css">
-	
-	<script src="../js/vendor/modernizr-2.5.3.min.js"></script>
+
+    <!-- Style theme. More available in /themes/style/ or create your own. -->
+    <!--<link rel="stylesheet" href="../css/atomizer.css"> -->
+
+    <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+    <link rel="stylesheet" href="../css/transition/horizontal-slide.css">
+
+    <script src="../js/vendor/modernizr-2.5.3.min.js"></script>
 </head>
 
 <body>
@@ -40,98 +44,219 @@
     </div>
 </header>
 
+<div id="background"></div>
+
 <div class="deck-container">
-<section class="slide" id="title-slide">
-	<h1>HTML5  Game  Engines</h1>
-</section>
+    <section class="slide" id="title-slide">
+        <h1>HTML5 Game Engines</h1>
+    </section>
 
-<section class="slide" id="why-am-i-listening-to-this">
-    <h2>Overview</h2>
-    <ul>
-        <li><h3>Why HTML5 for gaming?</h3></li>
-        <li><h3>Current Status</h3></li>
-        <li><h3>What are the top engines available now?</h3></li>
-        <li><h3>Overview of engines and demos!</h3></li>
-        <li><h3>Where is it going?</h3></li>
-    </ul>
-</section>
+    <section class="slide" id="why-am-i-listening-to-this">
+        <h2>Overview</h2>
+        <ul>
+            <!--<li><h3>Focus on 2D & 2.5D engines</h3></li>-->
+            <li><h3>Why HTML5 for gaming?</h3></li>
+            <li><h3>Current Status</h3></li>
+            <li><h3>What are the top engines available now?</h3></li>
+            <li><h3>Overview of engines and demos!</h3></li>
+            <li><h3>Where is it going?</h3></li>
+        </ul>
+    </section>
 
-<section class="slide" id="html5">
-    <h2>Why and How HTML5?</h2>
-    <ul>
-        <li><h3>Why?</h3></li>
-        <li>Code Once, multi-platform/multi-device support</li>
-        <li><h3>How?</h3></li>
-        <li>Leverage Canvas</li>
-        <li>Websockets</li>
-        <li>Localstorage/Offline</li>
-    </ul>
+    <section class="slide" id="html5">
+        <h2>What is an HTML5 game engine?</h2>
+        <ul class="no-bullet">
+            <li><h3>The idea</h3></li>
+            <li>Code once, multi-platform/multi-device support</li>
+            <li>Still gain access to certain hardware specific features:</li>
+            <small>Currently: gps & accelerometer</small>
+            <small>Bleeding Edge: camera & microphone</small>
+            <li><h3>How?</h3></li>
+            <li>Leverage Canvas</li>
+            <li>Websockets</li>
+            <li>Localstorage/Offline</li>
+        </ul>
+    </section>
 
-</section>
+    <section class="slide" id="offerings">
+        <h2>What are the options?</h2>
+        <section id="html5-game-engines">
+            <h3>To name a few....</h3>
 
-<section class="slide" id="timeline">
-    <h2>Timeline</h2>
-    <ul>
-        <li><h3>Aves Engine</h3></li>  <!-- http://youtu.be/_RRnyChxijA?t=41m58s -->
-        <p>Acquired by Zynga Q3 2010 <a href="http://www.insidesocialgames.com/2010/09/24/zynga-acquires-dextrose-aves-engine-html5/">[src]</a></p>
-        <li><h3>Impact JS</h3></li>
-        <p>Commercial engine released Q4 2010 <a href="http://impactjs.com/blog/2010/12/impact-is-now-ready">[src]</a></p>
-        <li><h3>Rocket Engine</h3></li>
-        <p>Acquired by Disney Q1 2011 <a href="http://techcrunch.com/2011/03/03/disney-acquires-gaming-engine-startup-to-build-html5-games-outside-of-app-stores/">[src]</a></p>
-        <li><h3>Crafty</h3></li>
-        <p>Open engine initial release Q4 2010<a href="https://github.com/craftyjs/Crafty/blob/master/changelog.txt">[src]</a></p>
-        <li><h3>melonJS</h3></li>
-        <p>Open engine initial release Q2 2011<a href="https://github.com/obiot/melonJS/blob/master/CHANGELOG">[src]</a> </p>
-    </ul>
-</section>
+            <p>
+                <a href="http://www.kesiev.com/akihabara/">Akihabara</a>,
+                <a href="https://github.com/nornagon/atom">atom</a>,
+                <a href="https://github.com/Osmose/bdge">bdge</a>,
+                <a href="https://github.com/funkaster/ChesterGL/">ChesterGL</a>,
+                <a href="http://sourceforge.net/projects/clanfx/">ClanFx</a>,
+                <a href="http://cocos2d-javascript.org/">Cocos2D</a>,
+                <a href="http://www.scirra.com/">Construct 2</a>,
+                <a href="http://craftyjs.com/">Crafty</a>,
+                <a href="http://www.effectgames.com/effect/">Effect Games</a>,
+                <a href="http://entityjs.com/">EntityJS</a>,
+                <a href="http://gammajs.org/">GammaJS</a>,
+                <a href="http://www.isogenicengine.com/">Isogenic Engine</a>
+                <a href="http://jawsjs.com/">Jaws</a>,
+                <a href="http://code.google.com/p/jgen/">jgen</a>,
+                <a href="https://github.com/martensms/lycheeJS">lycheeJS</a>,
+                <a href="http://www.melonjs.org/">melonJS</a>,
+                <a href="https://github.com/michalbe/mibbu">mibbu</a>,
+                <a href="http://www.propulsionjs.com/">Propulsion</a>,
+                <a href="http://withpulse.com/">Pulse</a>,
+                <a href="http://rosewoodjs.blogspot.com/">Rosewood.JS</a>,
+                <a href="https://github.com/batiste/sprite.js">Sprite.js</a>
+            </p>
+        </section>
+        </p>
+        <p>For an updated list: <a href="https://github.com/bebraw/jswiki/wiki/Game-Engines">https://github.com/bebraw/jswiki/wiki/Game-Engines</a>
+        </p>
+    </section>
 
-<section class="slide" id="how-to-overview">
-	<h2>The Short List</h2>
-	<ul>
-		<li>
-			<h3>IMPACT</h3>
-			<a href="http://impactjs.com">impactjs.com</a>
-            <p>large presence however it comes with a price</p>
-		</li>
-		<li>
-			<h3>Crafty</h3>
-            <a href="http://craftyjs.com">craftyjs.com</a><p/>
-            <a href="https://github.com/craftyjs/craftyjs.github.com">crafty@github</a>
-			<p>open with great demos however tutorial is lacking</p>
-		</li>
-		<li>
-			<h3>melonJS</h3>
-            <a href="http://melonjs.org">melonJS.org</a><p/>
-            <a href="https://github.com/obiot/melonJS">melonJS@github</a>
-			<p>open with hidden demos and great tutorial</p>
-		</li>
-	</ul>
-</section>
+    <section class="slide" id="how-to-overview">
+        <h2>The Short List</h2>
 
+        <p>By size of project, how current, documentation, demo quality</p>
+        <ul>
+            <li>
+                <h3>IMPACT</h3>
+                <a href="http://impactjs.com">impactjs.com</a>
 
+                <p>large presence however it comes with a price</p>
+            </li>
+            <li>
+                <h3>Crafty</h3>
+                <a href="http://craftyjs.com">craftyjs.com</a>
 
+                <p/>
+                <a href="https://github.com/craftyjs/craftyjs.github.com">crafty@github</a>
 
-<!-- deck.navigation snippet -->
-<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
-<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+                <p>open with great demos however tutorial is lacking</p>
+            </li>
+            <li>
+                <h3>melonJS</h3>
+                <a href="http://melonjs.org">melonJS.org</a>
 
-<!-- deck.status snippet -->
-<p class="deck-status">
-	<span class="deck-status-current"></span>
-	/
-	<span class="deck-status-total"></span>
-</p>
+                <p/>
+                <a href="https://github.com/obiot/melonJS">melonJS@github</a>
 
-<!-- deck.goto snippet -->
-<form action="introduction" method="get" class="goto-form">
-	<label for="goto-slide">Go to slide:</label>
-	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
-	<datalist id="goto-datalist"></datalist>
-	<input type="submit" value="Go">
-</form>
+                <p>open with hidden demos and great tutorial</p>
+            </li>
+        </ul>
+        <h3>Honorable Mentions</h3>
 
-<!-- deck.hash snippet -->
-<a href="introduction" title="Permalink to this slide" class="deck-permalink">#</a>
+        <p><a href="http://www.scirra.com/">Construct 2</a>, <a href="http://withpulse.com">Pulse</a>, </p>
+    </section>
+
+    <section class="slide" id="html5-game-engine-timeline">
+        <h2>Timeline</h2>
+        <ul>
+            <li><h3>Aves Engine</h3></li>
+            <!-- http://youtu.be/_RRnyChxijA?t=41m58s -->
+            <p>Acquired by Zynga Q3 2010
+            <a href="http://www.insidesocialgames.com/2010/09/24/zynga-acquires-dextrose-aves-engine-html5/">[src]</a>
+            </p>
+            <li><h3>Impact JS</h3></li>
+            <p>Commercial engine released Q4 2010
+            <a href="http://impactjs.com/blog/2010/12/impact-is-now-ready">[src]</a></p>
+            <li><h3>Crafty</h3></li>
+            <p>Open engine initial release Q4 2010
+            <a href="https://github.com/craftyjs/Crafty/blob/master/changelog.txt">[src]</a></p>
+            <li><h3>Rocket Engine</h3></li>
+            <p>Acquired by Disney Q1 2011
+            <a href="http://techcrunch.com/2011/03/03/disney-acquires-gaming-engine-startup-to-build-html5-games-outside-of-app-stores/">[src]</a>
+            </p>
+            <li><h3>melonJS</h3></li>
+            <p>Open engine initial release Q2 2011<a
+                    href="https://github.com/obiot/melonJS/blob/master/CHANGELOG">[src]</a></p>
+        </ul>
+    </section>
+
+    <section class="slide" id="impact">
+        <h2>IMPACT</h2>
+
+        <h3>Features</h3>
+        <ul>
+            <li>Built in performance and debug tool</li>
+            <li>Good documentation (there is even an <a href="http://www.amazon.com/gp/product/1449315178">O'Reilly
+                book!!1!</a>) and <a href="http://impactjs.com/forums/">forum</a></li>
+            <li>Homebrew level editor</li>
+            <li>Supports plugins, <a href="http://www.pointofimpactjs.com/plugins/index.php">plugin resource</a></li>
+            <li>Box2D for physics (through plugin), <a href="http://impactjs.com/demos/physics/">fun demo</a></li>
+            <li>Socket.IO support (through plugins, <a href="https://github.com/elbowdonkey/impsock">impsock</a>, <a
+                    href="https://github.com/cdreier/impactConnect">impactConnect</a>)
+            </li>
+            <li>Commercial $99 :-(</li>
+        </ul>
+        <h3>Synopsis</h3>
+
+        <p>It is commercial and closed with no way to try it free. The homebrew level editor doesn't support 2.5D
+            'isometric' games but can be faked. The maturity of the project gives to the good documentation and community, the developer
+            previous two releases were May 2012 & December 2011, if there is a new major release you would need to
+            purchase a new license according to the disclaimer. Overall, very solid engine.</p>
+    </section>
+    <section class="slide" id="impact-demo">
+        <h2>IMPACT Demo</h2>
+
+    </section>
+    <section class="slide" id="crafty">
+        <h2>Crafty</h2>
+
+        <h3>Features</h3>
+        <ul>
+            <li>MIT or GPL license on <a href="https://github.com/craftyjs/Crafty">github</a></li>
+            <li>jsdoc based <a href="http://craftyjs.com/api/">API documentation</a> and <a href="https://groups.google.com/forum/#!forum/craftyjs">Google Groups forum</a></li>
+            <li>Canvas or DOM, your choice</li>
+            <li>Expanded through modules</li>
+            <li>88.4 KB when </li>
+        </ul>
+        <h3>Synopsis</h3>
+        <p>poop</p>
+
+    </section>
+
+    <section class="slide" id="crafty-demo">
+        <h2>Crafty Demo</h2>
+
+    </section>
+
+    <section class="slide" id="melonjs">
+        <h2>melonJS</h2>
+
+        <h3>Features</h3>
+        <ul>
+            <li>opensource on github</li>
+        </ul>
+        <h3>Synopsis</h3>
+        <p>poop</p>
+
+    </section>
+
+    <section class="slide" id="melonjs-demo">
+        <h2>melonJS Demo</h2>
+
+    </section>
+
+    <!-- deck.navigation snippet -->
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status">
+        <span class="deck-status-current"></span>
+        /
+        <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="introduction" method="get" class="goto-form">
+        <label for="goto-slide">Go to slide:</label>
+        <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+        <datalist id="goto-datalist"></datalist>
+        <input type="submit" value="Go">
+    </form>
+
+    <!-- deck.hash snippet -->
+    <a href="introduction" title="Permalink to this slide" class="deck-permalink">#</a>
 </div>
 
 <!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
@@ -149,9 +274,9 @@
 
 <!-- Initialize the deck -->
 <script>
-$(function() {
-	$.deck('.slide');
-});
+    $(function () {
+        $.deck('.slide');
+    });
 </script>
 
 </body>
