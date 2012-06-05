@@ -8,13 +8,14 @@ window.onload = function() {
     //start crafty
     Crafty.init();
     Crafty.canvas.init();
+    Crafty.e("TiledLevel").tiledLevel("../scr/maps/map_one_layer.json", "Canvas");
     Crafty.background("white");
 
-    Crafty.sprite(40, '../../images/dog_sprite_sheet.png', {
+    /*Crafty.sprite(40, '../img/sprites/dog_sprite_sheet.png', {
         dog: [0, 0]
-    });
+    }); */
 
-    Crafty.modules({ TiledLevel: 'dev-uncompressed', MoveTo: "dev-uncompressed"}, function(){
+    /*Crafty.modules({ TiledLevel: 'dev-uncompressed', MoveTo: "dev-uncompressed"}, function(){
 
         Crafty.scene("main", function (){
             Craft.e("TiledLevel").tiledLevel("../maps/map.json", "Canvas");
@@ -25,6 +26,6 @@ window.onload = function() {
 
 
 
-    Crafty.scene('main');
+    Crafty.scene('main'); */
 
 };
