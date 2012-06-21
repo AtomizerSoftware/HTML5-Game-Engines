@@ -2,27 +2,46 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <title>Crafty Random Map Demo</title>
 
-    <!-- Load Crafty -->
-    <!--<script type="text/javascript" src="http://cdn.craftycomponents.com/crafty-release.js"></script> -->
-    <script type="text/javascript" src="../js/libs/crafty.js"></script>
-
-    <!-- Load Crafty Components -->
-    <script src="TiledLevel.js" type="text/javascript"></script>
-
-    <script src="../js/vendor/jquery-1.7.2.min.js" type="text/javascript"></script>
-
-
-    <!-- Load Game Demo -->
-    <script type="text/javascript" src="main.js"></script>
-
+    <script src="../js/vendor/modernizr-2.5.3.min.js"></script>
     <!-- Load Style -->
-	<style type="text/css" src="../../css/atomizer.css"></style>
-
-    <title>Crafty.js Demo</title>
+	<style type="text/css" src="../../../css/atomizer.css"></style>
 
 </head>
 <body>
+
+
+<footer>
+
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+
+<!-- Load Crafty -->
+<script type="text/javascript" src="http://cdn.craftycomponents.com/crafty-release.js"></script>
+
+<!-- Load Game Demo -->
+<script type="text/javascript" src="crafty_random.js"></script>
+
+<script>
+    function is_touch_device() {
+        return !!('ontouchstart' in window);
+    }
+
+    if (is_touch_device()) {
+        alert('This is a touch device, hold on to ur butts');
+        $('footer').append(
+                '<div id="button-container" style="position:absolute; top: 0px; z-index: 50;">' +
+                '<button><img src="/img/left.png"/></button>' +
+                '<button><img src="/img/up.png"/></button>' +
+                '<button><img src="/img/down.png"/></button>' +
+                '<button><img src="/img/right.png"/></button>' +
+                '</div>');
+    }
+
+</script>
 
 </body>
 </html>
